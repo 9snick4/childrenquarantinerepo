@@ -1,5 +1,5 @@
 <?php
 
-  header("location: /childquarantinerepo/index.php");
+  header("location: /web/index.php");
 
 ?>
