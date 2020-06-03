@@ -1,11 +1,10 @@
 {
   "ExpandedNodes": [
     "",
+    "\\db",
     "\\web",
-    "\\web\\childquarantinerepo",
-    "\\web\\childquarantinerepo\\includes",
-    "\\web\\childquarantinerepo\\vendor"
+    "\\web\\childquarantinerepo"
   ],
-  "SelectedNode": "\\web\\childquarantinerepo\\vendor",
+  "SelectedNode": "\\index.php",
   "PreviewInSolutionExplorer": false
 }
