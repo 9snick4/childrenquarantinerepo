@@ -6,22 +6,18 @@
     try
     {
     //Query sample
-    /* 
+    /
        switch($_POST["form-id"])
         {
-            case 'c':
-                $query = "INSERT INTO City 
-                (CityName, Latitude, Longitude,CityPopulation, Extension, Elevation, CreatedOn,ModifiedOn,CreatedBy,ModifiedBy) 
-                VALUES(:CityName, :Latitude, :Longitude,:CityPopulation, :Extension, :Elevation,NOW(),NOW(),1, 1)";
+            case 'a':
+                $query = "INSERT INTO Asset 
+                (AssetName, AssetType, CreatedOn,ModifiedOn) 
+                VALUES(:AssetName, :AssetType, NOW(),NOW())";
                 $statement = $db->prepare($query);
-                $statement->bindValue(':CityName', $_POST["city-textfield"]);
-                $statement->bindValue(':Latitude', $_POST["latitude-textfield"]);
-                $statement->bindValue(':Longitude', $_POST["longitude-textfield"]);
-                $statement->bindValue(':CityPopulation', $_POST["population-textfield"]);
-                $statement->bindValue(':Extension', $_POST["extension-textfield"]);
-                $statement->bindValue(':Elevation', $_POST["elevation-textfield"]);
+                $statement->bindValue(':AssetName', $_POST["assetName-textfield"]);
+                $statement->bindValue(':AssetType', $_POST["assetType-textfield"]);
                 $statement->execute();
-            break;
+            break;/*
             case 'a':
                 $query = "INSERT INTO MapCity
                 (MapID, CityID, CreatedOn,ModifiedOn,CreatedBy,ModifiedBy) 
@@ -46,11 +42,11 @@
                 $statement = $db->prepare($query);
                 $statement->bindValue(':MapName', $_POST["map-textfield"]);
                 $statement->execute();
-            break;
+            break;*/
             default;
                 echo "Input error";
         }
-        */
+        
     }
     catch (Exception $ex)
     {
